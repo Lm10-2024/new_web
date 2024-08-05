@@ -1,0 +1,199 @@
+/* Hero Section */
+.hero-section {
+  background-color: #7a7a8a;
+  padding: 0px 0;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-text h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+}
+
+.hero-image {
+  padding: 0; /* Remove any default padding */
+}
+
+.hero-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border-radius: 0px;
+  object-fit: cover;
+}
+
+
+
+/* Services Section */
+.service-card {
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  padding: 20px; /* Padding inside the card */
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.service-icon {
+  font-size: 2rem; /* Larger icon size */
+  font-weight: bold;
+  color: #007bff; /* Match with your theme color */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Adjust title size */
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.5rem; /* Adjust text size */
+  color: #6c757d; /* Subtle text color */
+}
+
+.text-center {
+  margin-bottom: 20px; /* Space below heading */
+}
+
+
+/* Portfolio Section */
+.portfolio-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.portfolio-card .card-text {
+  font-size: 1rem; /* Adjust text size */
+}
+
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+
+ /* Testimonial Section */
+.testimonial-card {
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  padding: 20px; /* Padding inside the card */
+  height: 100%; /* Ensure uniform height */
+  background: linear-gradient(145deg, #f0f0f0, #ffffff); /* Gradient background */
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.testimonial-card .card-text {
+  font-size: 1.25rem; /* Adjust text size */
+  color: #333; /* Text color */
+  font-style: italic; /* Italicized text for emphasis */
+}
+
+.testimonial-card .card-footer {
+  font-size: 1rem; /* Footer text size */
+  color: #6c757d; /* Subtle text color */
+  text-align: right; /* Align text to the right */
+}
+
+.testimonial-card .card-footer::before {
+  content: "- "; /* Add dash before the client's name */
+  color: #007bff; /* Dash color to match the theme */
+}
+
+.text-center {
+  margin-bottom: 20px; /* Space below heading */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font for headings */
+  font-weight: bold;
+  color:#343a40; /* Theme color for headings */
+}
+
+/* Add some spacing between the testimonial cards */
+.row > .col-md-4 {
+  margin-bottom: 20px;
+}
+
+/* Subtle animation for the testimonial cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-card {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+
+/* Contact Section */
+.contact-section {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 40px 20px; /* More padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.contact-section h2 {
+  font-size: 2.5rem; /* Larger heading size */
+  margin-bottom: 20px; /* Space below heading */
+  color: #007bff; /* Theme color for heading */
+}
+
+.contact-section p {
+  font-size: 1.25rem; /* Adjust text size */
+  margin-bottom: 30px; /* Space below paragraph */
+  color: #6c757d; /* Subtle text color */
+}
+
+.contact-section .btn-primary {
+  padding: 10px 20px; /* Padding for button */
+  font-size: 1.25rem; /* Larger button text */
+  border-radius: 5px; /* Rounded button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-section .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+

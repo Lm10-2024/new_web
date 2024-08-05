@@ -1,0 +1,54 @@
+/* Custom styles to ensure the toggle menu only shows on small screens */
+@media (min-width: 992px) {
+    .navbar-toggler {
+      display: none;
+    }
+  }
+  
+  /* Custom styles for the navbar toggler */
+.custom-toggler {
+    border: none; /* Remove default border */
+    background: none; /* Remove default background */
+  }
+  
+  /* Hamburger and cross icon */
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    transition: background-image 0.3s ease;
+  }
+  
+  .navbar-toggler-icon.open {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M6 6l18 18M6 24l18-18'/%3E%3C/svg%3E");
+  }
+  
+  /* Smooth transition for the navbar collapse */
+  .navbar-collapse {
+    transition: height 0.s ease;
+  }
+  
+  .navbar-collapse.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+  .navbar-collapse.show {
+    height: auto;
+    transition: height 0.3s ease;
+  }
+  
+  /* Adjust other navbar styles */
+  .nav-link {
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
